@@ -13,7 +13,7 @@ function App() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/calculate-bmi', formData);
+      const response = await axios.post('https://bmi-calculator-backend-rtoi.onrender.com/calculate-bmi', formData);
       setResult(response.data);
     } catch (error) {
       console.error(error);
